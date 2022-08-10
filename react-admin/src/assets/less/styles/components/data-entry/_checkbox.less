@@ -1,0 +1,32 @@
+.ant-checkbox {
+    top: 5px;
+}
+
+.ant-checkbox-inner {
+    border-radius: @border-radius-sm;
+
+    &:after {
+        top: @checkbox-size - 12px;
+        left: @checkbox-size - 17px;
+    }
+
+    & when (@theme = dark) {
+        background-color: rgba(@white, .15);
+    }
+}
+
+.ant-checkbox-checked {
+
+    &:after {
+        border-radius: @border-radius-sm;
+    }
+}
+
+.ant-checkbox-indeterminate {
+
+    .ant-checkbox-inner {
+        & when (@theme = dark) {
+            background-color: rgba(@white, .15);
+        }
+    }
+}

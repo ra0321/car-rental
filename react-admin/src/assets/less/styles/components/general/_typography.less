@@ -1,0 +1,138 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  line-height: @line-height-base;
+  color: @heading-color;
+}
+
+h1,
+.h1 {
+  font-size: @heading-1-size;
+}
+
+h2,
+.h2 {
+  font-size: @heading-2-size;
+}
+
+h3,
+.h3 {
+  font-size: @heading-3-size;
+}
+
+h4,
+.h4 {
+  font-size: @heading-4-size;
+}
+
+h5,
+.h5 {
+  font-size: @font-size-base;
+}
+
+h6,
+.h6 {
+  font-size: @heading-6-size;
+}
+
+p {
+  color: @gray-light;
+  line-height: 1.8;
+
+  & when (@theme = dark) {
+    color: @text-color;
+  }
+}
+
+code {
+  margin: 0 1px;
+  background: @gray-lightest;
+  padding: .2em .4em;
+  border-radius: 3px;
+  font-size: .9em;
+  border: 1px solid @border-color-base;
+  color: @error-color;
+}
+
+.hl-code code {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  border-radius: 3px;
+  font-size: 1em;
+  border: 0;
+}
+
+.ant-typography h1,
+h1.ant-typography {
+  font-weight: @font-weight-semibold;
+}
+
+.ant-typography h2,
+h2.ant-typography {
+  font-weight: @font-weight-semibold;
+}
+
+.ant-typography h3,
+h3.ant-typography {
+  font-weight: @font-weight-semibold;
+}
+
+.ant-typography h4,
+h4.ant-typography {
+  font-weight: @font-weight-semibold;
+}
+
+.ant-typography p,
+p.ant-typography {
+  color: @gray-light;
+}
+
+.ant-typography {
+  strong {
+    font-weight: @font-weight-bold;
+  }
+
+  &.ant-typography-warning {
+    color: @warning-color;
+  }
+
+  &.ant-typography-danger {
+    color: @error-color;
+  }
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: @line-height-base;
+}
+
+.display-2 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: @line-height-base;
+}
+
+.display-3 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: @line-height-base;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+}

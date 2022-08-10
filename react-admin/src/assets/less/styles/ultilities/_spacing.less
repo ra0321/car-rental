@@ -1,0 +1,126 @@
+@plugin "../../plugins/map-keys.js";
+@plugin "../../plugins/breakpoints.js";
+
+@spacer: 1rem;
+@spacers: {
+	0: 0;
+	1: (@spacer * 0.25);
+	2: (@spacer * 0.5);
+	3: @spacer;
+	4: (@spacer * 1.5);
+	5: (@spacer * 3);
+};
+
+#media-breakpoint-up(@name, @content, @breakpoints: @grid-breakpoints) {
+	@min: breakpoint-min(@name, @breakpoints);
+
+	& when not (@min = ~"") {
+		@media (min-width: unit(@min, px))  {
+			@content();
+		}
+	}
+	& when (@min = ~"") {
+		@content();
+	}
+}
+
+each(map-keys(@grid-breakpoints), #(@breakpoint) {
+
+	#media-breakpoint-up(@breakpoint, {
+		@infix: breakpoint-infix(@breakpoint, @grid-breakpoints);
+
+		each({ margin: m; padding: p; }, #(@abbrev, @prop) {
+			each(@spacers, #(@length, @size) {
+				.@{abbrev}@{infix}-@{size} { @{prop}: @length !important; }
+				.@{abbrev}t@{infix}-@{size},
+				.@{abbrev}y@{infix}-@{size} {
+					@{prop}-top: @length !important;
+				}
+				
+				.@{abbrev}b@{infix}-@{size},
+				.@{abbrev}y@{infix}-@{size} {
+					@{prop}-bottom: @length !important;
+				}
+
+				& when (@rtl-enable = true) {
+					.dir-ltr {
+						.@{abbrev}r@{infix}-@{size},
+						.@{abbrev}x@{infix}-@{size} {
+							@{prop}-right: @length !important;
+						}
+						.@{abbrev}l@{infix}-@{size},
+						.@{abbrev}x@{infix}-@{size} {
+							@{prop}-left: @length !important;
+						}
+					}
+					
+	
+					.dir-rtl {
+						.@{abbrev}r@{infix}-@{size},
+						.@{abbrev}x@{infix}-@{size} {
+							@{prop}-left: @length !important;
+						}
+	
+						.@{abbrev}l@{infix}-@{size},
+						.@{abbrev}x@{infix}-@{size} {
+							@{prop}-right: @length !important;
+						}
+					}
+				}
+
+				& when (@rtl-enable = false) {
+					.@{abbrev}r@{infix}-@{size},
+					.@{abbrev}x@{infix}-@{size} {
+						@{prop}-right: @length !important;
+					}
+					.@{abbrev}l@{infix}-@{size},
+					.@{abbrev}x@{infix}-@{size} {
+						@{prop}-left: @length !important;
+					}
+				}
+			});
+		});
+
+		// Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+		each(@spacers, #(@length, @size) {
+			& when not (@size = 0) {
+				.m@{infix}-n@{size} { margin: -@length !important; }
+				.mt@{infix}-n@{size},
+				.my@{infix}-n@{size} {
+					margin-top: -@length !important;
+				}
+				.mr@{infix}-n@{size},
+				.mx@{infix}-n@{size} {
+					margin-right: -@length !important;
+				}
+				.mb@{infix}-n@{size},
+				.my@{infix}-n@{size} {
+					margin-bottom: -@length !important;
+				}
+				.ml@{infix}-n@{size},
+				.mx@{infix}-n@{size} {
+					margin-left: -@length !important;
+				}
+			}
+		});
+
+		// Some special margin utils
+		.m@{infix}-auto { margin: auto !important; }
+		.mt@{infix}-auto,
+		.my@{infix}-auto {
+			margin-top: auto !important;
+		}
+		.mr@{infix}-auto,
+		.mx@{infix}-auto {
+			margin-right: auto !important;
+		}
+		.mb@{infix}-auto,
+		.my@{infix}-auto {
+			margin-bottom: auto !important;
+		}
+		.ml@{infix}-auto,
+		.mx@{infix}-auto {
+			margin-left: auto !important;
+		}
+	});
+});

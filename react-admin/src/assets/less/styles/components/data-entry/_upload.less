@@ -1,0 +1,79 @@
+.ant-upload {
+
+    &.ant-upload-select-picture-card {
+        width: 110px;
+        height: 110px;
+        border: 2px dashed @border-color-base;
+        border-radius: 10px;
+        background-color: transparent;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    &.ant-upload-drag {
+        border: 2px dashed @border-color-base;
+        border-radius: @border-radius-base;
+        padding: 0 16px;
+        background: transparent;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+
+        &:not(.ant-upload-disabled) {
+            &:hover {
+                border-color: @primary-color;
+            }
+        }
+
+        p.ant-upload-drag-icon {
+
+            .anticon {
+                color: @primary-color;
+            }
+        }
+        
+        p.ant-upload-text {
+            color: @gray-dark;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        p.ant-upload-hint {
+            color: @gray-light;
+        }
+    }
+}
+
+.ant-upload-list-item {
+    height: 30px;
+}
+
+.ant-upload-list-item-info {
+    border-radius: @border-radius-sm;
+}
+
+.ant-upload-list-picture-card {
+    .ant-upload-list-item-actions {
+
+        .anticon-delete, 
+        .anticon-download, 
+        .anticon-eye {
+            color: rgba(@white, .85)
+        }
+
+        .ant-btn:not(.ant-btn-primary):focus, 
+        .ant-btn:not(.ant-btn-primary):hover {
+            background-color: transparent;
+            border-color: transparent;
+            color: @white
+        }
+    }
+}
+
+.ant-upload-list-item-card-actions {
+    .ant-btn:not(.ant-btn-primary):focus, 
+    .ant-btn:not(.ant-btn-primary):hover {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,140 @@
+.mail {
+ 
+    .mail-list {
+
+        .ant-table-row {
+            cursor: pointer;
+        }
+
+        .ant-table-selection {
+            padding: 0.3rem 0;
+        }
+
+        .mail-list-star {
+            padding-right: 15px ;
+            padding-left: 0;
+            cursor: pointer;
+
+            &.checked {
+                color: @warning-color;
+            }
+
+            &.uncheck {
+                color: @text-muted;
+            }
+
+            &:hover {
+                color: @warning-color;
+            }
+        }
+
+        .mail-list-sender {
+            width: 220px;
+            padding: 15px 0;
+        }
+
+        .mail-list-content {
+            max-width: 0;
+            
+            .mail-list-content-msg {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .mail-list-date {
+            width: 100px;
+            text-align: right;
+        }
+
+
+        .mail-list-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mail-list-action-icon {
+            font-size: @heading-3-size;
+            color: @gray;
+            cursor: pointer;
+            margin-left: 1.2rem;
+        }
+    }
+
+    .mail-detail {
+
+        .mail-detail-action {
+            display: flex;
+            align-items: center;
+        }
+
+        .mail-detail-action-icon {
+            margin-left: 0.75rem;
+            font-size: @heading-3-size;
+            cursor: pointer;
+
+            &.star {
+                &.checked {
+                    color: @warning-color;
+                }
+
+                &:hover {
+                    color: @warning-color;
+                }
+            }
+
+            &:hover {
+                color: @primary-color;
+            }
+        }
+
+        .mail-detail-content {
+            margin-top: 1.25rem;
+        }
+
+        .mail-detail-attactment {
+            display: flex;
+            margin-top: 30px;
+            
+            .mail-detail-attactment-item {
+                cursor: pointer;
+                border-radius: @border-radius-lg;
+                border: @border-width-base solid @border-color-base;
+                padding: 5px 10px;
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+
+                .anticon {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .mail-compose {
+        .ql-container {
+            min-height: 9.5rem;
+            border-top: 1px solid @border-color-base !important;
+            border-bottom: 0px;
+        }
+
+        .ql-editor {
+            min-height: 9.5rem;
+        }
+
+        .editor-wrapper {
+            position: relative;
+        }
+
+        .ql-toolbar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(100%);
+            z-index: 1;
+        }
+    }
+}

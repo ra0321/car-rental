@@ -1,0 +1,30 @@
+.side-nav {
+    height: calc(100vh - @header-height); 
+    position: fixed;
+    top: @header-height;
+    box-shadow: @side-nav-box-shadow;
+    z-index: @zindex-modal - 1;
+    direction: ltr;
+
+    & when (@theme = light) {
+        background-color: @white;
+    }
+    
+    .print ({
+        display: none;
+    }); 
+
+    &.side-nav-dark {
+        background-color: @menu-dark-bg;
+    }
+
+    .hide-group-title {
+        .ant-menu-item-group-title {
+            display: none;
+        }
+    }
+}
+
+.mobile-nav-menu {
+    height: calc(100vh - @header-height - 10px);
+}

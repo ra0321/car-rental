@@ -1,0 +1,21 @@
+.page-header-alt {
+    background-color: @page-header-alt-bg;
+    padding: @layout-content-gutter;
+    margin-top: -@layout-content-gutter;
+    margin-left: -@layout-content-gutter;
+    margin-right: -@layout-content-gutter;
+    
+    .screen-mobile ({
+        margin-left: -@layout-content-gutter-sm;
+        margin-right: -@layout-content-gutter-sm;
+    });
+
+    &.overlap {
+        margin-bottom: -4.6875rem;
+    }
+
+    &.full-screen {
+        position: relative;
+        width: 100vw;
+    }
+}

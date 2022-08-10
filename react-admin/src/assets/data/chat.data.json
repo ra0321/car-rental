@@ -1,0 +1,307 @@
+[
+	{
+		"id": 1,
+		"name": "Eileen Horton",
+		"avatar": "/img/avatars/thumb-1.jpg",
+		"unread": 3,
+		"time": "4:16PM",
+		"msg": [
+			{
+				"avatar": "/img/avatars/thumb-1.jpg",
+				"text": "Hey, Bro...",
+				"from": "opposite",
+				"time": "",
+				"msgType": "text"
+			},
+			{
+				"avatar": "",
+				"text": "Hey",
+				"from": "me",
+				"time": "",
+				"msgType": "text"
+			},
+			{
+				"avatar": "",
+				"text": "",
+				"from": "",
+				"time": "7:57PM",
+				"msgType": "date"
+			},
+			{
+				"avatar": "/img/avatars/thumb-1.jpg",
+				"text": "Did you check out our latest product?",
+				"from": "opposite",
+				"time": "",
+				"msgType": "text"
+			},
+			{
+				"avatar": "/img/avatars/thumb-1.jpg",
+				"text": "Its awesome!",
+				"from": "opposite",
+				"time": "",
+				"msgType": "text"
+			},
+			{
+				"avatar": "/img/avatars/thumb-1.jpg",
+				"text": "You would probably love it",
+				"from": "opposite",
+				"time": "",
+				"msgType": "text"
+			},
+			{
+				"avatar": "",
+				"text": "Wow, that was cool!",
+				"from": "me",
+				"time": "",
+				"msgType": "text"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Terrance Moreno",
+		"avatar": "/img/avatars/thumb-2.jpg",
+		"time": "18/04/2020",
+		"unread": 2,
+		"msg": [
+				{
+						"avatar": "",
+						"text": "",
+						"from": "",
+						"time": "7:57PM",
+						"msgType": "date"
+				},
+				{
+						"avatar": "/img/avatars/thumb-2.jpg",
+						"text": "Hello Jason ",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Hello, how are you ",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-2.jpg",
+						"text": "Remember our previous discussion?",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Yeah, sure!",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-2.jpg",
+						"text": "This is the finalize version.",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Application-United.pdf",
+						"from": "opposite",
+						"time": "",
+						"msgType": "file"
+				},
+				{
+						"avatar": "",
+						"text": "Okay! Thank you",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Ron Vargas",
+		"avatar": "/img/avatars/thumb-3.jpg",
+		"time": "17/04/2020",
+		"unread": 5,
+		"msg": [
+				{
+						"avatar": "",
+						"text": "",
+						"from": "",
+						"time": "7:57PM",
+						"msgType": "date"
+				},
+				{
+						"avatar": "/img/avatars/thumb-3.jpg",
+						"text": "Your great aunt just passed away. LOL",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Why is that funny?",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-3.jpg",
+						"text": "Its not funny at all",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Why do you think funny?",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "LOL mean laughing out loud",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "",
+						"from": "",
+						"time": "7:59PM",
+						"msgType": "date"
+				},
+				{
+						"avatar": "/img/avatars/thumb-3.jpg",
+						"text": "OMG! I send that to everyone",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				}
+				
+		]
+	},
+	{
+		"id": 4,
+		"name": "Luke Cook",
+		"avatar": "/img/avatars/thumb-4.jpg",
+		"time": "14/04/2020",
+		"unread": 0,
+		"msg": [
+				{
+						"avatar": "",
+						"text": "",
+						"from": "",
+						"time": "8:08PM",
+						"msgType": "date"
+				},
+				{
+						"avatar": "/img/avatars/thumb-4.jpg",
+						"text": "Dude are you ready to party?",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Umm who are you",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-4.jpg",
+						"text": "Oh sorry wrong chat",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-4.jpg",
+						"text": "Bye",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "...but I wan to party",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Tara Fletcher",
+		"avatar": "/img/avatars/thumb-7.jpg",
+		"time": "21/03/2020",
+		"unread": 0,
+		"msg": [
+				{
+						"avatar": "/img/avatars/thumb-7.jpg",
+						"text": "Oh yeah? well I enjoy a nice steak. how about you?",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "We’ d have steak and ice cream three times every day!",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-7.jpg",
+						"text": "I eat all the steak and chicken too, even bacon",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "That was great!",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-7.jpg",
+						"text": "yeah you said that already",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "Dynamic structure can absorb shock.",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "/img/avatars/thumb-7.jpg",
+						"text": "yes it can. I know about that as a bodybuilder",
+						"from": "opposite",
+						"time": "",
+						"msgType": "text"
+				},
+				{
+						"avatar": "",
+						"text": "The strongest man in the world is blowing up a hot water bottle.",
+						"from": "me",
+						"time": "",
+						"msgType": "text"
+				}
+		]
+	}
+]

@@ -1,0 +1,56 @@
+.ant-card {
+    margin-bottom: 20px;
+}
+
+.ant-card-head {
+    padding: 0 @card-head-padding;
+    margin-bottom: -1px;
+    min-height: @card-head-height;
+    border-bottom: 0;
+    font-size: 17px;
+
+    .ant-tabs-bar {
+        border-bottom: 1px solid @border-color-base;
+    }
+
+    .ant-tabs {
+        margin-bottom: -21px;
+    }
+}
+
+.ant-card-head-title {
+    font-weight: @font-weight-bold;
+    padding-bottom: 0;
+    padding-top: @card-head-padding - 4px;
+}
+
+.ant-card-extra {
+    padding-top: @card-head-padding;
+    padding-bottom: 0;
+}
+
+.ant-card-bordered {
+    border: 1px solid @border-color-base;
+    
+    & when (@theme = dark) {
+        border-color: transparent;
+    }
+}
+
+.ant-card-meta-title {
+    font-weight: @font-weight-bold;
+}
+
+.ant-card-type-inner {
+
+    .ant-card-head {
+        & when (@theme = light) {
+            background: @gray-lightest;
+        }
+    }
+}
+
+.ant-card-actions {
+    border-bottom-right-radius: @border-radius-base;
+    border-bottom-left-radius: @border-radius-base;
+}

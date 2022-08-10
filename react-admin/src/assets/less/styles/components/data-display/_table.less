@@ -1,0 +1,64 @@
+.ant-table-thead {
+
+    > tr {
+        > th {
+            font-weight: @font-weight-bold
+        }
+    }
+
+    th {
+        &.ant-table-column-has-sorters {
+            &:hover {
+                & when (@theme = light) {
+                    background: #f2f2f2;
+                }
+
+                & when (@theme = dark) {
+                    background: darken(@table-header-sort-bg, 2%);
+                }
+            }
+        }
+    }
+}
+
+.ant-table-fixed-header {
+
+    .ant-table-thead {
+        >tr {
+            >th {
+                & when (@theme = light) {
+                    background: @gray-lightest;
+                }
+            }
+        }
+    }
+}
+
+tr.ant-table-expanded-row:hover>td, 
+tr.ant-table-expanded-row>td {
+    background: @component-background;
+}
+
+.ant-table-content {
+    .screen-mobile ({
+        overflow-x: auto;
+    });
+}
+
+.ant-table-selection-extra {
+    top: 5px;
+}
+
+.ant-table-filter-dropdown-btns {
+    border-bottom-right-radius: @border-radius-base;
+    border-bottom-left-radius: @border-radius-base;
+}
+
+.ant-table-filter-trigger {
+    border-radius: @rounded-pill;
+    padding: 0px 9px;
+}
+
+.ant-table-pagination.ant-pagination {
+    margin: 16px 5px;
+}

@@ -1,0 +1,38 @@
+@color-picker-height: 15px; 
+@color-picker-whitespace: 5px;
+@color-picker-dropdown-offset: @color-picker-height + @color-picker-whitespace + 10px;
+
+.color-picker {
+    position: relative;
+
+    .color-picker-dropdown {
+        border: 1px solid @border-color-base;
+        border-radius: @border-radius-base;
+        padding: @color-picker-whitespace;
+        display: inline-block;
+
+        .color {
+            height: @color-picker-height;
+            width: 60px;
+            border: 1px solid @border-color-base;
+            cursor: pointer;
+        }
+    }
+
+    .color-picker-backdrop {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        left: 0;
+        top: 0;
+        z-index: @zindex-image + 1;
+    }
+
+    .sketch-picker {
+        position: absolute;
+        z-index: @zindex-image + 2;
+        left: 0;
+        top: @color-picker-dropdown-offset;
+    }
+}

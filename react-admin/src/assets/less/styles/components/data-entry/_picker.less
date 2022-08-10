@@ -1,0 +1,117 @@
+.ant-picker-cell {
+
+    .ant-picker-cell-inner {
+        border-radius: @rounded-pill;
+        line-height: @picker-panel-cell-height + 2px;
+    }
+}
+
+.ant-picker-cell-in-view {
+
+    &.ant-picker-cell-today {
+        color: @primary-color;
+
+        .ant-picker-cell-inner {
+
+            &:before {
+                border-radius: @rounded-pill;
+            }
+        }
+    }
+}
+
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(.ant-picker-cell-range-end) {
+    .ant-picker-cell-inner {
+        border-radius: @rounded-pill;
+    }
+}
+
+.ant-picker-cell-in-view {
+
+    &.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(.ant-picker-cell-range-end) {
+        .ant-picker-cell-inner {
+            border-radius: @rounded-pill;
+        }
+    }
+
+    &.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):not(.ant-picker-cell-range-start) {
+        .ant-picker-cell-inner {
+            border-radius: @rounded-pill;
+        }
+    }
+
+    &.ant-picker-cell-range-hover-end.ant-picker-cell-range-end-single::after, 
+    &.ant-picker-cell-range-hover-end.ant-picker-cell-range-start.ant-picker-cell-range-end.ant-picker-cell-range-start-near-hover::after, 
+    &.ant-picker-cell-range-hover-end:not(.ant-picker-cell-in-range):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end)::after, 
+    &.ant-picker-cell-range-hover-start.ant-picker-cell-range-start-single::after, 
+    &.ant-picker-cell-range-hover-start.ant-picker-cell-range-start.ant-picker-cell-range-end.ant-picker-cell-range-end-near-hover::after, 
+    &.ant-picker-cell-range-hover-start:not(.ant-picker-cell-in-range):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end)::after, 
+    &.ant-picker-cell-range-hover:not(.ant-picker-cell-in-range)::after {
+        height: @picker-panel-cell-height;
+    }
+
+    &.ant-picker-cell-end.ant-picker-cell-range-hover-edge-end.ant-picker-cell-range-hover-edge-end-near-range::after, 
+    &.ant-picker-cell-range-hover-edge-end:not(.ant-picker-cell-range-hover-edge-end-near-range)::after, 
+    &.ant-picker-cell-range-hover-end::after {
+        right: 3px;
+        border-top-right-radius: @rounded-pill;
+        border-bottom-right-radius: @rounded-pill;
+    }
+
+    &.ant-picker-cell-range-hover-edge-start:not(.ant-picker-cell-range-hover-edge-start-near-range)::after, 
+    &.ant-picker-cell-range-hover-start::after, 
+    &.ant-picker-cell-start.ant-picker-cell-range-hover-edge-start.ant-picker-cell-range-hover-edge-start-near-range::after {
+        left: 3px;
+        border-top-left-radius: @rounded-pill;
+        border-bottom-left-radius: @rounded-pill;
+    }
+}
+
+.ant-picker-range {
+    .ant-picker-active-bar {
+        background-color: transparent;
+    }
+}
+
+tr {
+    > .ant-picker-cell-in-view {
+        &.ant-picker-cell-range-hover-start:last-child::after, 
+        &.ant-picker-cell-range-hover:last-child::after {
+            right: 3px;
+            border-top-right-radius: @rounded-pill;
+            border-bottom-right-radius: @rounded-pill;
+        }
+
+        &.ant-picker-cell-range-hover-end:first-child::after, 
+        &.ant-picker-cell-range-hover:first-child::after {
+            left: 3px;
+            border-top-left-radius: @rounded-pill;
+            border-bottom-left-radius: @rounded-pill;
+        }
+    }
+}
+
+.ant-picker-month-panel, 
+.ant-picker-quarter-panel, 
+.ant-picker-year-panel {
+    .ant-picker-cell-inner {
+        width: 80px;
+    }
+}
+
+
+.ant-picker-time-panel-column  {
+
+    > li.ant-picker-time-panel-cell-selected {
+
+        .ant-picker-time-panel-cell-inner {
+            & when (@theme = light) {
+                background: rgba(@primary-color, 0.1);
+                color: @primary-color;
+            }
+
+            font-weight: @font-weight-semibold;
+        }
+    }
+}

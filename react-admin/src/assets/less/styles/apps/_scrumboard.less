@@ -1,0 +1,195 @@
+@scrumboard-bg : #f0f2f5;
+@scrumboard-add-bg: @white;
+
+.scrumboard {
+    width: 100%;
+    flex: 1 1 auto;
+    flex-direction: column;
+    display: flex;
+    height: calc(100vh - @content-height-offset - @layout-content-gutter - @layout-content-gutter);
+
+    .scrumboard-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        margin-bottom: 16px;
+    }
+
+    .scrumboard-body {
+        display: flex;
+        flex: 1 1;
+        overflow-x: auto;
+
+        > div{
+            display: flex;
+            flex: 1 1;
+        }
+    }
+}
+
+.board-column {
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background-color: @scrumboard-bg;
+    border-radius: @border-radius-base;
+    border: 1px solid @border-color-base;
+    margin-bottom: 15px;
+
+    &.add {
+        border: 0;
+        background-color: transparent;
+
+        .board-title {
+            border: 1px solid @border-color-base;
+            background-color: @scrumboard-bg;
+            justify-content: center;
+            border-radius: @border-radius-base;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken(@scrumboard-bg, 2%);
+            }
+        }
+    }
+}
+
+.board-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid @border-color-base;
+    transition: background-color 0.2s ease;
+    padding: 0.625rem 0.9375rem;
+    border-top-left-radius: @border-radius-base;
+    border-top-right-radius: @border-radius-base;
+}
+
+.board-wrapper {
+    overflow-y: auto;
+    flex: 1 1 auto;
+}
+
+.board-card {
+    margin-bottom: 0px;
+
+    .ant-card-body {
+        padding: 0.625rem;
+    }
+}
+
+.board-add {
+    background-color: @scrumboard-add-bg;
+    justify-content: center;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: @border-radius-base;
+    border-bottom-right-radius: @border-radius-base;
+    border-top: 1px solid @border-color-base;
+    font-weight: @font-weight-semibold;
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    &:hover {
+        background-color: darken(@scrumboard-add-bg, 1%);
+    }
+}
+
+.board-label {
+    display: inline-block;
+    width: 2rem;
+    height: 0.1875rem;
+    margin-right: 0.5rem;
+
+    each(@colors-palette, #(@value, @color) {
+
+        &.@{color} { 
+            background: @value;
+        }
+    })
+}
+
+.board-container {
+    min-width: 100vw;
+    display: inline-flex;
+}
+
+.board-dropzone {
+    padding: 0 0.9375rem;
+    padding-top: 0.9375rem;
+    height: 100%;
+}
+
+.board-card-modal {
+
+    &.input {
+        font-size: @font-size-lg;
+        font-weight: @font-weight-semibold;
+        border-color: transparent;
+        max-width: 95%;
+        padding: 5px 7.5px;
+        margin-left: -7.5px;
+        box-shadow: none;
+        color: @gray-dark;
+
+        &:focus {
+            border-color: @primary-color;
+        }
+    }
+
+    &.text-area {
+        border-color: transparent;
+        margin-left: -8.5px;
+
+        &:hover {
+            border-color: @primary-color;
+        }
+        
+        &:focus {
+            border-color: @primary-color;
+        }
+    }
+
+    &.select {
+        margin-left: -7.5px;
+
+        .ant-select-selector {
+            border-color: transparent;
+            min-height: 2.45rem;
+        }
+    }
+
+    &.date-picker {
+        margin-left: -7.5px;
+
+        &.ant-picker {
+            border-color: transparent;
+            margin-left: -11px;
+
+            &.ant-picker-focused,
+            &:hover,
+            .ant-picker-focused {
+                border-color: @primary-color;
+            }
+
+            .anticon-calendar {
+                display: none;
+            }
+        }
+    }
+}
+
+.blockform-col {
+    .ant-form-item-label {
+        padding-bottom: 0;
+    }
+
+    &.col-3 {
+        width: 33%;
+        min-width: 235px;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,60 @@
+.calendar {
+    
+    .calendar-event {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 5px;
+
+            .screen-tablet ({
+                display: inline-block;
+                .ant-badge {
+                    margin-right: 5px;
+                }
+                .ant-badge-status-text {
+                    display: none;
+                }
+            })
+        }
+    }
+
+    .calendar-list {
+        margin-bottom: 2rem;
+
+        .calendar-list-item {
+            padding: 5px 10px;
+            border-radius: @border-radius-base;
+            margin-bottom: 15px;
+            display: flex;
+            margin-left: 20px;
+            background-color: @gray-lightest;
+            align-items: center;
+            justify-content: space-between;
+
+            & when (@theme = dark) {
+                background-color: #303a4e;
+            }
+
+            & when (@theme = light) {
+                border: 1px solid @border-color-base;
+            }
+
+            .screen-mobile-above ({
+                max-width: 75%;
+            });
+
+            .calendar-list-item-delete {
+                opacity: 1;
+                cursor: pointer;
+                font-size: @heading-4-size;
+                transition: all 0.1s ease-in-out;
+
+                &:hover {
+                    color: @error-color;
+                }
+            }
+        }
+    }
+}

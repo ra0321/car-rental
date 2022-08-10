@@ -1,0 +1,68 @@
+.top-nav-reflect-color (@color) {
+    .ant-menu {
+        color: rgba(@color, 0.8);
+
+        .ant-menu-item-active, 
+        .ant-menu-item:hover, 
+        .ant-menu-submenu-active, 
+        .ant-menu-submenu-title:hover, 
+        .ant-menu:not(.ant-menu-inline) 
+        .ant-menu-submenu-open {
+            color: @color
+        }
+
+        &.ant-menu-horizontal {
+            > .ant-menu-item-active, 
+            > .ant-menu-item-open, 
+            > .ant-menu-item-selected, 
+            > .ant-menu-submenu-active, 
+            > .ant-menu-submenu-open, 
+            > .ant-menu-submenu-selected {
+                color: @color
+            }
+        }
+    }
+}
+
+.top-nav {
+    height: @top-nav-height;
+    background-color: #001529;
+    position: fixed;
+    top: @header-height;
+    width: 100%;
+    z-index: @zindex-modal;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+
+    .top-nav-wrapper {
+        max-width: @content-max-width;
+        margin-left: auto;
+        margin-right: auto;
+
+        .ant-menu-horizontal {
+            line-height: @top-nav-height;
+            border-bottom: 0;
+        }
+    }
+
+    &.light {
+        .top-nav-reflect-color(@white);
+    }
+
+    &.dark {
+        .top-nav-reflect-color(@text-color);
+    }
+}
+
+.top-nav-menu {
+    .ant-menu-vertical .ant-menu-item,
+    .ant-menu-vertical-left .ant-menu-item, 
+    .ant-menu-vertical-right .ant-menu-item, 
+    .ant-menu-inline .ant-menu-item, 
+    .ant-menu-vertical .ant-menu-submenu-title, 
+    .ant-menu-vertical-left .ant-menu-submenu-title, 
+    .ant-menu-vertical-right .ant-menu-submenu-title, 
+    .ant-menu-inline .ant-menu-submenu-title {
+        line-height: 2rem;
+        height: 2rem;
+    }
+}

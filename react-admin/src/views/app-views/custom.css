@@ -1,0 +1,258 @@
+.CarBtn {
+    justify-content: space-between;
+    display: flex;
+}
+.DownBtn {
+    padding: 15px;
+}
+.earning_table {
+    padding-top: 15px;
+}
+.car_info {
+    width: 320px;
+    min-height: 350px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px
+}
+.trip_info {
+    width: 490px;
+    min-height: 350px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px
+}
+.car_info_tab{
+    display: flex;
+}
+.photo_info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding:5px;
+    margin:5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.car_info_detail {
+    padding:11px;
+}
+.car_info_detail1 {
+    padding:13px;
+}
+.car_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.car_item_detail {
+    padding: 11px;
+    margin-right: 20px;
+}
+.car_info_icon {
+    display: flex;
+    align-items: center;
+}
+
+.anticon-close-circle {
+    color: red;
+}
+
+.anticon-check-circle{
+    color: green;
+}
+.car_image {
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    margin-left: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+}
+.car_image img {
+    padding: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.anticon-check {
+    color: green;
+}
+.anticon-delete {
+    color: red;
+}
+.car_insurance_body{
+    width: 1010px;
+    min-height: 400px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px
+}
+.car_insurance_detail{
+    padding:16px;
+}
+.car_registraion_body{
+    display: flex;
+}
+.car_registraion_body_left{
+    width: 350px;
+    height: 400px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.car_registraion_body_right {
+    width: 450px;
+    min-height: 500px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px
+}
+.owner{
+    width: 450px;
+    min-height: 500px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:5px;
+}
+.car_insurance_footer{
+    margin-left:5px;
+}
+.car_registrion_footer {
+    margin-left:  5px;
+}
+.total_owner {
+    display: flex;
+}
+.UserBtn {
+    justify-content: space-between;
+    display: flex;
+}
+.uers_detail_change_icon{
+    padding: 10px
+}
+.profileBtn {
+    margin: 25px;
+    margin-left: 220px;
+}
+.verifyBtn {
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat_info {
+    width: 100%;
+    min-height: 100px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.earing_detail {
+    display: flex;
+}
+.earing_detail_body{
+    width: 1010px;
+    outline: 0.5px ridge rgba(209, 209, 209, 0.6);
+    border-radius: 0.3rem;
+    padding: 5px;
+    margin-left:10px;
+    margin-bottom: 10px 
+}
+
+.RoleBtn {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_list_map {
+    position: relative;
+    height: 250px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-sm-3 {
+    width: 30%
+}
+.col-sm-9 {
+    width: 80%;
+}
+
+.car_list_header {
+    padding: 13px;
+}
+.input-width {
+    width: 250px;
+}
+
+.car_list_footer{
+    padding:15px;
+}
+.col {
+    padding: 15px;
+}
+.steps-content {
+    margin-top: 16px;
+    border: 1px dashed #e9e9e9;
+    border-radius: 6px;
+    background-color: #fafafa;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .steps-action {
+    margin-top: 24px;
+    display: flex;
+    /* justify-content: space-around; */
+  }
+
+  .advance_notice{
+      display: flex;
+      justify-content: space-between;
+      padding:20px;
+  }
+
+  .customize_style
+  {
+      display: flex;
+  }
+
+  .customize_padding{
+      padding:15px;
+  }
+
+  .upload_photo {
+      padding-bottom: 15px;
+  }
+
+  .padding-top {
+      padding-top: 15px;
+  }
+
+  .ant-checkbox-group-item{
+      width: 300px;
+  }

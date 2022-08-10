@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Erin Gonzales",
+		"desc": "has comment on your board",
+		"img": "thumb-1.jpg",
+		"icon": "",
+		"time": "7:57PM",
+		"type": ""
+	},
+	{
+		"name": "Frederick Adams",
+		"desc": "has mentioned you in a post",
+		"img": "thumb-8.jpg",
+		"icon": "",
+		"time": "3:12PM",
+		"type": ""
+	},
+	{
+		"name": "",
+		"desc": "You have received a new message",
+		"img": "",
+		"icon": "mail",
+		"time": "11:38AM",
+		"type": "info"
+	},
+	{
+		"name": "Carolyn Hanson",
+		"desc": "has invited you to a project",
+		"img": "thumb-9.jpg",
+		"icon": "",
+		"time": "9:42AM",
+		"type": ""
+	},
+	{
+		"name": "",
+		"desc": "Please fill in your daily report",
+		"img": "",
+		"icon": "alert",
+		"time": "7:57AM",
+		"type": "danger"
+	}
+]

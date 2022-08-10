@@ -1,0 +1,8 @@
+.ant-select-item-option-active {
+    &:not(.ant-select-item-option-disabled) {
+        & when (@theme = light) {
+            background-color: rgba(@primary-color, 0.1);
+            color: @select-item-selected-color;
+        }
+    }
+}

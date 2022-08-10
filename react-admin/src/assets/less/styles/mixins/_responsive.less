@@ -1,0 +1,62 @@
+// usage : .screen-desktop ({...}) 
+.screen-desktop(@content) {
+    @media only screen and (min-width: 1440px) {
+        @content();
+    }
+}
+
+// usage : .screen-laptop-above ({...}) 
+.screen-laptop-above(@content) {
+    @media only screen and (min-width: @screen-xxl) {
+        @content();
+    }
+}
+
+// usage : .screen-laptop ({...}) 
+.screen-laptop(@content) {
+    @media only screen and (max-width: @screen-xxl) {
+        @content();
+    }
+}
+
+// usage : .screen-laptop-only ({...}) 
+.screen-laptop-only(@content) {
+    @media only screen and (min-width: @screen-lg) and (max-width: @screen-xxl)  {
+        @content();
+    }
+}
+
+// usage : .screen-tablet-above ({...}) 
+.screen-tablet-above(@content) {
+    @media only screen and (min-width: @screen-lg) {
+        @content();
+    }
+}
+
+// usage : .screen-tablet ({...}) 
+.screen-tablet(@content) {
+    @media only screen and (max-width: @screen-lg) {
+        @content();
+    }
+}
+
+// usage : .screen-mobile-above ({...})
+.screen-mobile-above(@content) {
+    @media only screen and (min-width: 768px) {
+        @content();
+    }
+}
+
+// usage : .screen-mobile({...}) 
+.screen-mobile(@content) {
+    @media only screen and (max-width: @screen-md) {
+        @content();
+    }
+}
+
+// usage : .print({...}) 
+.print(@content) {
+    @media print {
+        @content();
+    }
+}

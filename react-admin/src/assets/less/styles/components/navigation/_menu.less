@@ -1,0 +1,80 @@
+.ant-menu {
+    font-weight: @font-weight-semibold;
+}
+
+.ant-menu-horizontal {
+  
+    > .ant-menu-item-active,
+    > .ant-menu-item-open,
+    > .ant-menu-item-selected,
+    > .ant-menu-submenu-active,
+    > .ant-menu-submenu-open,
+    > .ant-menu-submenu-selected {
+      border-bottom: 0px;
+    }
+  
+    &:not(.ant-menu-dark) {
+        > .ant-menu-item:hover,
+        > .ant-menu-submenu:hover, 
+        > .ant-menu-item-active, 
+        > .ant-menu-submenu-active, 
+        > .ant-menu-item-open, 
+        > .ant-menu-submenu-open, 
+        > .ant-menu-item-selected, 
+        > .ant-menu-submenu-selected {
+
+            &:after {
+                border-bottom: 0px !important;
+            } 
+        }
+    }
+  
+    > .ant-menu-item,
+    > .ant-menu-submenu {
+
+        &:after {
+            border-bottom: 0px;
+        }
+    
+        &:hover {
+            border-bottom: 0px;
+
+            &:after {
+                border-bottom: 0px;
+            }
+        }
+    }
+
+    > .ant-menu-item-selected a {
+        color: @text-color;
+    }
+}
+
+.ant-menu-sub {
+    font-weight: @font-weight-normal;
+
+    &.ant-menu-inline {
+        background: transparent;
+    }
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: transparent;
+}
+
+.ant-menu-inline-collapsed {
+
+    .ant-menu-item-group-title {
+      display: none;
+    }
+}
+
+.ant-menu-item-group-title {
+    padding: 12px 24px;
+    color: rgba(@gray-dark, .6);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+}

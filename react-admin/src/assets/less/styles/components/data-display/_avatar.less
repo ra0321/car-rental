@@ -1,0 +1,18 @@
+.avatar-status-name {
+    font-weight: @font-weight-semibold;
+    color: @heading-color;
+}
+
+each(@colors-palette, #(@value, @color) {
+    .ant-avatar-@{color} { 
+        background: rgba(@value, 0.1);
+        color: @value;
+    }
+})
+
+each(@theme-colors, #(@value, @color) {
+    .ant-avatar-@{color} { 
+        background: rgba(@value, 0.1);
+        color: @value;
+    }
+})

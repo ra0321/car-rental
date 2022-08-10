@@ -1,0 +1,15 @@
+.ellipsis-dropdown {
+    cursor: pointer;
+    font-size: @heading-3-size;
+    transform: rotate(90deg);
+    display: inline-block;
+    line-height: 1;
+    padding: 0.3125rem;
+    border-radius: @rounded-pill;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(@black, 0.05);
+    }
+}

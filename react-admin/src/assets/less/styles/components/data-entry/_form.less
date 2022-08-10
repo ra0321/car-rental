@@ -1,0 +1,24 @@
+.ant-form-item {
+    margin-bottom: @form-item-margin-bottom;
+}
+
+.ant-form-item-label {
+    label {
+        font-weight: @font-weight-semibold;
+    }
+
+    > label {
+        color: @label-color;
+    }
+}
+
+.ant-form-item-has-feedback {
+    &.ant-form-item-has-error, 
+    &.ant-form-item-has-success, 
+    &.ant-form-item-has-warning, 
+    &.ant-form-item-is-validating {
+        .ant-form-item-children-icon {
+            margin-top: -9px;
+        }
+    }
+}

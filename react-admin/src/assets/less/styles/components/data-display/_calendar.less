@@ -1,0 +1,142 @@
+.ant-picker-calendar {
+
+    .ant-picker-panel {
+
+        .ant-picker-body {
+            padding: 10px 0;
+        }
+
+        .ant-picker-content {
+
+            tbody {
+                border-left: 1px solid @border-color-base;
+                border-bottom: 1px solid @border-color-base;
+            }
+        }
+    }
+
+    &.ant-picker-calendar-mini {
+        .ant-picker-panel {
+            border-top: 1px solid @border-color-base;
+
+            .ant-picker-content {
+                tbody {
+                    border-left: 0;
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.ant-picker-calendar-full {
+
+    .ant-picker-panel {
+
+        .ant-picker-calendar-date { 
+            margin: 0px;
+            padding: 4px 8px 0;
+            border-top: 1px solid @border-color-base;
+            border-right: 1px solid @border-color-base;
+
+            .screen-mobile ({
+                padding-left: 4px;
+                padding-right: 4px;
+            });
+        }
+
+        .ant-picker-calendar-date-value {
+            display: inline-block;
+            line-height: 2;
+
+            .screen-mobile ({
+                line-height: 1.5;
+            });
+        }
+
+        .ant-picker-calendar-date-content {
+            height: 86px;
+
+            .screen-laptop-only ({
+                height: 70px;
+
+                .calendar-event {
+
+                    .ant-badge {
+                        display: flex;
+                        align-items: baseline;                    
+                    }
+                    
+                    .ant-badge-status-dot {
+                        min-width: @badge-dot-size;
+                    }
+
+                    .ant-badge-status-text {
+                        font-size: @font-size-sm;
+                    }
+                }
+            });
+
+            .screen-mobile ({
+                height: 30px;
+            });
+
+            .screen-tablet ({
+                height: 40px
+            });
+        }
+
+        .ant-picker-cell {
+
+            .ant-picker-cell-inner {
+                .screen-mobile ({
+                    line-height: 1;
+                    font-size: 12px;
+                })
+            }
+        }
+
+        .ant-picker-cell-selected {
+
+            .ant-picker-calendar-date,
+            .ant-picker-calendar-date-today {
+                background: rgba(@primary-color, 0.1);
+
+                .ant-picker-calendar-date-value {
+                    color: @primary-color;
+                    font-weight: @font-weight-semibold;
+                }
+            }
+
+            &:hover {
+                .ant-picker-calendar-date,
+                .ant-picker-calendar-date-today {
+                    background: rgba(@primary-color, 0.1);
+
+                    .ant-picker-calendar-date-value {
+                        color: @primary-color;
+                    }
+                }
+            }
+        }
+
+        .ant-picker-calendar-date-today {
+            .ant-picker-calendar-date-value {
+                background-color: @primary-color;
+                color: @white !important;
+                font-weight: @font-weight-normal !important;
+                border-radius: @border-radius-lg;
+                padding: 0rem 0.408rem;
+
+                .screen-mobile ({ 
+                    padding: 0rem 0.2rem;
+                })
+            }
+        }
+    }
+}
+
+.ant-picker-calendar-header {
+    padding: 0.9375rem 0;
+}
