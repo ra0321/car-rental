@@ -1,2 +1,2 @@
 # car-rental
-Laravel+React
+Laravel+React+MySQL
