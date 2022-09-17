@@ -2,6 +2,7 @@
   "name": "emilus",
   "version": "2.1.4",
   "private": true,
+  "author" : "jupiter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
