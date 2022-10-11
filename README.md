@@ -1,6 +1,2 @@
-
-
-
-
-
+Car rental web site
 
