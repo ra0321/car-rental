@@ -4,7 +4,6 @@ namespace App;
 
 use App\Transformers\CarRegistrationTransformer;
 use Illuminate\Database\Eloquent\Model;
-
 /**
  * App\CarFeatures
  */
